@@ -19,7 +19,7 @@ public:
 //a general use function to print the data values of the linked list
 void printList(Node* n)
 {
-  while(n!=NULL)
+  while(n!=NULL) //this loops will traverse the list till it reaches the null pointer which indicated the end of the list
   {
     cout<<n->data<<" ";
     n=n->next;
