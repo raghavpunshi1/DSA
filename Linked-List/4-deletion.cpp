@@ -31,11 +31,10 @@ void printList(Node* node)
 void deleteNode(Node** head_ref, int key)
 {
   // Store head node
-  Node* temp=*head_ref;
+  Node* temp=*head_ref;    
   Node* prev=NULL;
   
-  // If head node itself holds
-  // the key to be deleted
+  // If head node itself holds the key to be deleted
   if(temp!=NULL && temp->data==key)
   {
     *head_ref=temp->next;
